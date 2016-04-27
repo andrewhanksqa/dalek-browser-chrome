@@ -17,7 +17,7 @@ dalek-browser-chrome
 [![NPM](https://nodei.co/npm/dalek-browser-chrome.png)](https://nodei.co/npm/dalek-browser-chrome/)
 [![NPM](https://nodei.co/npm-dl/dalek-browser-chrome.png)](https://nodei.co/npm/dalek-browser-chrome/)
 
-## Ressources
+## Resources
 
 [API Docs](http://dalekjs.com/package/dalek-browser-chrome/master/api/index.html) -
 [Trello](https://trello.com/b/xhw6Jv7A/dalek-browser-chrome) -
@@ -51,8 +51,8 @@ Or you can tell Dalek that it should test in this browser via the command line:
 $ dalek mytest.js -b chrome
 ```
 
-The Webdriver Server tries to open Port 9002 by default,
-if this port is blocked, it tries to use a port between 9003 & 9092
+The Webdriver Server tries to open Port 9002 by default.
+If this port is blocked, it then tries to use a port between 9003 & 9092.
 You can specifiy a different port from within your [Dalekfile](/pages/config.html) like so:
 
 ```
@@ -73,14 +73,14 @@ It is also possible to specify a range of ports:
 }]
 ```
 
-If you would like to test Chrome Canary oder Chromium releases, you can simply apply a snd. argument,
+If you would like to test Chrome Canary or older Chromium releases, you can simply apply a snd. argument,
 which defines the browser type:
 
 ```
 $ dalek mytest.js -b chrome:canary
 ```
 
-for canary, and if you would like to use chromium, just append `:chromium`:
+for Canary, and if you would like to use Chromium, just append `:chromium`:
 
 ```
 $ dalek mytest.js -b chrome:chromium
@@ -98,7 +98,7 @@ its location in your [Dalekfile](/pages/config.html):
 }]
 ```
 
-This also works for the canary & chromium builds
+This also works for the Canary & Chromium builds
 
 ```javascript
 "browsers": [{
